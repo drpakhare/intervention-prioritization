@@ -59,12 +59,12 @@ ui <- fluidPage(
     sidebarPanel(
       width = 3,
       
-      h4("1. Manage Items"),
-      textInput("name", "Item Name:", placeholder = "e.g., Peer Support Groups"),
+      h4("1. Manage Interventions"),
+      textInput("name", "Intervention Name:", placeholder = "e.g., Peer Support Groups"),
       textInput("short_name", "Short Name (for plots):", placeholder = "e.g., PSG"),
-      actionButton("add", "Add Item", class = "btn-primary", icon = icon("plus"), width = "100%"),
+      actionButton("add", "Add Intervention", class = "btn-primary", icon = icon("plus"), width = "100%"),
       br(),br(),
-      selectInput("item_to_manage", "Select Item to Manage:", choices = NULL),
+      selectInput("item_to_manage", "Select Intervention to Manage:", choices = NULL),
       uiOutput("remove_item_ui"),
       hr(),
       
